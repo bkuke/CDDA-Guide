@@ -39,7 +39,7 @@ function init(){
 }
 function fetchImages(rurl){
 	let name=rurl+'.png';
-	let url='/image/'+name;
+	let url='/CDDA-Guide/image/'+name;
 	fetch(url).then((response)=>{return response.blob();}).then(instack).catch(console.log('erroe'));
 function instack(blob){
 	place(rurl,blob);
