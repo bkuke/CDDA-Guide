@@ -40,7 +40,7 @@ function init(){
 function fetchImages(rurl){
 	let name=rurl+'.png';
 	let url='/image/'+name;
-	fetch(url).then((response)=>{return response.blob();}).then(instack).catch(console('erroe'));
+	fetch(url).then((response)=>{return response.blob();}).then(instack).catch(console.log('erroe'));
 function instack(blob){
 	place(rurl,blob);
 	let newItem={name:rurl,blob:blob};
